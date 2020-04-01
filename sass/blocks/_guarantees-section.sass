@@ -5,10 +5,11 @@
         margin: 0
         margin: auto
         text-align: center
-        max-width: 660px
+        max-width: 690px
         color: $discounts-text
         font-size: 30px
-        font-weight: 600
+        +bold
+        font-weight: 400
         line-height: 45px
     &-block
         margin-top: 56px
@@ -25,12 +26,13 @@
         max-width: 270px
         border: 20px solid $section-color1
         background-color: #ffffff
-    &-text
+    &__text
         margin: 0
         margin-top: 40px
         text-align: center
         color: $discounts-text
-        font-size: 18px
+        font-family: "Museo Sans Light"
+        font-size: 17px
         font-weight: 400
         line-height: 24px
 @media ( max-width: 768px)
@@ -44,7 +46,7 @@
             line-height: 21px
         &-block
             margin-top: 6px
-        &-text
+        &__text
             max-width: 230px
             margin: auto
             margin-top: 30px

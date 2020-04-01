@@ -3,6 +3,22 @@
           box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'Museo Sans Light';
+  src: url("../fonts/Museo-Sans/MuseoSansCyrl-300.eot");
+  src: url("../fonts/Museo-Sans/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/Museo-Sans/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/Museo-Sans/MuseoSansCyrl-300.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans Bold';
+  src: url("../fonts/Museo-Sans/MuseoSansCyrl-700.eot");
+  src: url("../fonts/Museo-Sans/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/Museo-Sans/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/Museo-Sans/MuseoSansCyrl-700.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   font-family: sans-serif;
 }
@@ -57,6 +73,12 @@ body {
           flex-direction: column;
 }
 
+.navbar__address {
+  font-family: "Museo Sans Light";
+  font-size: 13px;
+  font-weight: 400;
+}
+
 .navbar__button {
   margin-left: 30px;
   color: #333333;
@@ -88,13 +110,14 @@ body {
 
 .top-section {
   background-color: #f5f5f5;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .top-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 50px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -106,31 +129,38 @@ body {
 }
 
 .top-text {
-  max-width: 462px;
+  max-width: 470px;
 }
 
-.top-title {
+.top-text__title {
   font-size: 41px;
   font-weight: 400;
   line-height: 55px;
   color: #333333;
   margin: 0;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
 }
 
-.top-description {
+.top-text__subtitle {
   margin: 0;
   margin-top: 50px;
   font-size: 20px;
   font-weight: 400;
+  line-height: 65px;
   color: #333333;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
 }
 
-.top-virtues {
+.top-list {
+  padding: 0;
+  margin: 0;
   margin-top: 30px;
   max-width: 310px;
 }
 
-.top-virtues-desc {
+.top-list__item {
   padding-top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -140,8 +170,9 @@ body {
           align-items: center;
 }
 
-.top-virtues-desc p {
+.top-list__text {
   margin-left: 30px;
+  font-family: "Museo Sans Light";
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
@@ -158,12 +189,15 @@ body {
   .top-text {
     width: 45%;
   }
-  .top-title {
+  .top-text__title {
     font-size: 35px;
   }
 }
 
 @media (max-width: 768px) {
+  .top-section {
+    padding-bottom: 0;
+  }
   .top-block {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -172,23 +206,23 @@ body {
   .top-text {
     width: 100%;
   }
-  .top-title {
+  .top-text__title {
     line-height: 36px;
     font-size: 24px;
     font-weight: 400;
   }
-  .top-description {
+  .top-text__subtitle {
     margin-top: 13px;
     font-size: 16px;
     font-weight: 400;
   }
-  .top-virtues {
+  .top-list {
     margin-top: 8px;
   }
-  .top-virtues-desc {
+  .top-list__item {
     padding-top: 20px;
   }
-  .top-virtues-desc p {
+  .top-list__text {
     margin-left: 15px;
     font-size: 12px;
     font-weight: 400;
@@ -211,29 +245,33 @@ body {
   background-position: right;
 }
 
-.form-design-block {
+.form-design__block {
   padding-top: 85px;
   padding-bottom: 90px;
   max-width: 500px;
 }
 
-.form-design-title {
+.form-design__title {
   display: block;
-  max-width: 345px;
+  max-width: 350px;
   font-size: 24px;
   font-weight: 400;
   line-height: 35px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
 }
 
-.form-design-message {
+.form-design__message {
   display: block;
   max-width: 235px;
   margin-top: 24px;
   font-size: 16px;
   font-weight: 400;
+  font-family: 'Museo Sans Light', sans-serif;
+  font-weight: 300;
 }
 
-.form-design-name {
+.form-design__name {
   width: 240px;
   height: 65px;
   border-radius: 10px;
@@ -241,7 +279,7 @@ body {
   padding: 26px;
 }
 
-.form-design-phone {
+.form-design__phone {
   width: 240px;
   height: 65px;
   border-radius: 10px;
@@ -250,7 +288,7 @@ body {
   margin-left: 14px;
 }
 
-.form-design-btn {
+.form-design__btn {
   width: 495px;
   height: 70px;
   margin-top: 30px;
@@ -263,7 +301,7 @@ body {
   color: #333333;
 }
 
-.form-design-desc {
+.form-design__desc {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -275,25 +313,29 @@ body {
   margin-top: 30px;
 }
 
-.form-design-manadger {
+.form-design__manadger {
   margin: 0;
   width: 224px;
   color: #333333;
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
+  font-family: 'Museo Sans Light', sans-serif;
+  font-weight: 300;
 }
 
-.form-design-dialing {
+.form-design__dialing {
   margin: 0;
   width: 189px;
   color: #333333;
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
+  font-family: 'Museo Sans Light', sans-serif;
+  font-weight: 300;
 }
 
-.form-design-dialing-phon {
+.form-design__dialing-phon {
   font-weight: 700;
 }
 
@@ -304,17 +346,17 @@ body {
 }
 
 @media (max-width: 768px) {
-  .form-design-block {
+  .form-design__block {
     padding-top: 50px;
     padding-bottom: 56px;
     margin: auto;
   }
-  .form-design-title {
+  .form-design__title {
     width: 259px;
     font-size: 18px;
     font-weight: 400;
   }
-  .form-design-message {
+  .form-design__message {
     margin-top: 20px;
     width: 203px;
     font-size: 14px;
@@ -323,20 +365,20 @@ body {
 }
 
 @media (max-width: 560px) {
-  .form-design-block {
+  .form-design__block {
     width: 275px;
   }
-  .form-design-name {
+  .form-design__name {
     width: 275px;
     height: 65px;
   }
-  .form-design-phone {
+  .form-design__phone {
     margin: 0;
     margin-top: 8px;
     width: 275px;
     height: 65px;
   }
-  .form-design-btn {
+  .form-design__btn {
     width: 275px;
     height: 70px;
     padding: 19px 62px;
@@ -344,7 +386,7 @@ body {
     font-weight: 400;
     line-height: 18px;
   }
-  .form-design-desc {
+  .form-design__desc {
     width: 275px;
     font-size: 15px;
     font-weight: 400;
@@ -361,11 +403,13 @@ body {
 .activity-title {
   margin: auto;
   text-align: center;
-  max-width: 786px;
+  max-width: 1200px;
   color: #333333;
   font-size: 30px;
   font-weight: 400;
   line-height: 45px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
 }
 
 .activity-repairs {
@@ -429,22 +473,26 @@ body {
   padding-bottom: 60px;
 }
 
-.discounts-title {
+.discounts__title {
   max-width: 515px;
   margin: auto;
   text-align: center;
   color: #000000;
   font-size: 30px;
+  font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
+  font-weight: 400;
   line-height: 45px;
 }
 
-.discounts-description {
+.discounts__description {
   max-width: 210px;
   margin: auto;
   text-align: center;
   margin-top: 58px;
   color: #000000;
+  font-family: 'Museo Sans Light', sans-serif;
+  font-weight: 300;
   font-size: 20px;
   font-weight: 400;
   line-height: 45px;
@@ -463,10 +511,12 @@ body {
           justify-content: space-between;
 }
 
-.discounts-block-title {
+.discounts-block__title {
   margin: 0;
   margin-top: 40px;
   color: #000000;
+  font-family: 'Museo Sans Light', sans-serif;
+  font-weight: 300;
   font-size: 18px;
   font-weight: 400;
   line-height: 45px;
@@ -532,18 +582,18 @@ body {
   .discounts-section {
     padding-top: 50px;
   }
-  .discounts-title {
+  .discounts__title {
     max-width: 250px;
     color: #000000;
     font-size: 18px;
     font-weight: 700;
     line-height: 27px;
   }
-  .discounts-description {
+  .discounts__description {
     margin-top: 30px;
     font-size: 14px;
   }
-  .discounts-block-title {
+  .discounts-block__title {
     color: #000000;
     font-size: 14px;
     font-weight: 400;
@@ -555,27 +605,31 @@ body {
   padding-bottom: 100px;
 }
 
-.froze-title {
-  max-width: 650px;
+.froze__title {
+  max-width: 660px;
   margin: auto;
   text-align: center;
   color: #000000;
   font-size: 30px;
   font-weight: 400;
   line-height: 45px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
 }
 
-.froze-description {
+.froze__description {
   text-align: center;
   margin: 0;
   margin-top: 60px;
   color: #000000;
+  font-family: 'Museo Sans Light', sans-serif;
+  font-weight: 300;
   font-size: 20px;
   font-weight: 400;
   line-height: 45px;
 }
 
-.froze-flex {
+.froze__flex {
   margin-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -587,19 +641,21 @@ body {
       flex-wrap: wrap;
 }
 
-.froze-acions {
+.froze__acions {
   margin-top: 30px;
   padding: 5px;
   padding-top: 10px;
   max-width: 160px;
 }
 
-.froze-acions-description {
+.froze__acions-description {
   margin: 0;
   margin-top: 30px;
   text-align: center;
   color: #000000;
-  font-size: 14px;
+  font-family: 'Museo Sans Light', sans-serif;
+  font-weight: 300;
+  font-size: 13px;
   font-weight: 400;
   line-height: 20px;
 }
@@ -621,24 +677,24 @@ body {
     margin-top: -5px;
     padding-bottom: 75px;
   }
-  .froze-title {
+  .froze__title {
     max-width: 245px;
     color: #000000;
     font-size: 18px;
     font-weight: 700;
     line-height: 27px;
   }
-  .froze-description {
+  .froze__description {
     margin-top: 30px;
     font-size: 14px;
   }
-  .froze-flex {
+  .froze__flex {
     margin-top: 0px;
   }
   .froze-arrow {
     display: none;
   }
-  .froze-acions-description {
+  .froze__acions-description {
     font-size: 12px;
   }
 }
@@ -647,18 +703,19 @@ body {
   padding-bottom: 140px;
 }
 
-.availability-title-block {
+.availability-title__block {
   background-color: #ffc000;
   padding-top: 100px;
   padding-bottom: 100px;
 }
 
-.availability-title-text {
+.availability-title__text {
   margin: 0;
   margin: auto;
-  max-width: 910px;
+  max-width: 920px;
   text-align: center;
   color: #000000;
+  font-family: "Museo Sans Light";
   font-size: 32px;
   font-weight: 400;
   line-height: 50px;
@@ -697,10 +754,11 @@ body {
   block-size: cover;
 }
 
-.availability-description {
+.availability__description {
   margin: 0;
   max-width: 288px;
   color: #000000;
+  font-family: "Museo Sans Light";
   font-size: 16px;
   font-weight: 400;
   line-height: 23px;
@@ -714,11 +772,11 @@ body {
   .availability-section {
     padding-bottom: 77px;
   }
-  .availability-title-block {
+  .availability-title__block {
     padding-top: 72px;
     padding-bottom: 76px;
   }
-  .availability-title-text {
+  .availability-title__text {
     max-width: 255px;
     color: #000000;
     font-size: 18px;
@@ -733,7 +791,7 @@ body {
     max-width: 278px;
     min-height: 300px;
   }
-  .availability-description {
+  .availability__description {
     font-size: 12px;
     font-weight: 400;
     line-height: 17.05px;
@@ -757,10 +815,12 @@ body {
   margin: 0;
   margin: auto;
   text-align: center;
-  max-width: 660px;
+  max-width: 690px;
   color: #000000;
   font-size: 30px;
-  font-weight: 600;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+  font-weight: 400;
   line-height: 45px;
 }
 
@@ -791,12 +851,13 @@ body {
   background-color: #ffffff;
 }
 
-.guarantees-text {
+.guarantees__text {
   margin: 0;
   margin-top: 40px;
   text-align: center;
   color: #000000;
-  font-size: 18px;
+  font-family: "Museo Sans Light";
+  font-size: 17px;
   font-weight: 400;
   line-height: 24px;
 }
@@ -814,7 +875,7 @@ body {
   .guarantees-block {
     margin-top: 6px;
   }
-  .guarantees-text {
+  .guarantees__text {
     max-width: 230px;
     margin: auto;
     margin-top: 30px;
@@ -846,7 +907,7 @@ body {
   background-color: #ffc000;
 }
 
-.computation-cost-block {
+.computation-cost__block {
   margin-top: 100px;
   margin-bottom: 100px;
   margin-right: 70px;
@@ -854,29 +915,32 @@ body {
   max-width: 515px;
 }
 
-.computation-cost-title {
+.computation-cost__title {
   margin: 0;
   color: #000000;
   font-size: 22px;
+  font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
+  font-weight: 400;
   line-height: 33px;
 }
 
-.computation-cost-description {
+.computation-cost__description {
   margin: 0;
   margin-top: 50px;
   color: #000000;
+  font-family: +light;
   font-size: 16px;
   font-weight: 400;
   line-height: 45px;
 }
 
-.computation-cost-questions {
+.computation-cost__questions {
   margin-top: 64px;
   max-width: 450px;
 }
 
-.computation-cost-questions-option {
+.computation-cost__questions-option {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -886,7 +950,7 @@ body {
           align-items: center;
 }
 
-.computation-cost-questions-number {
+.computation-cost__questions-number {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -902,13 +966,17 @@ body {
   border-radius: 50%;
   color: #000000;
   font-size: 14px;
+  font-weight: 400;
+  font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
 }
 
-.computation-cost-questions-text {
+.computation-cost__questions-text {
   margin-left: 32px;
   font-size: 18px;
+  font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
+  font-weight: 400;
 }
 
 .computation-requeset {
@@ -918,7 +986,7 @@ body {
   background-position: top center;
 }
 
-.computation-requeset-block {
+.computation-requeset__block {
   max-width: 370px;
   margin-left: 200px;
   margin-right: 6.5%;
@@ -926,22 +994,26 @@ body {
   margin-bottom: 100px;
 }
 
-.computation-requeset-title {
+.computation-requeset__title {
   max-width: 360px;
   margin: 0;
   margin: auto;
   text-align: center;
   color: #333333;
   font-size: 22px;
+  font-weight: 400;
+  font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
   line-height: 33px;
 }
 
-.computation-requeset-description {
+.computation-requeset__description {
   margin: 0;
   margin-top: 50px;
   text-align: center;
   color: #333333;
+  font-family: 'Museo Sans Light', sans-serif;
+  font-weight: 300;
   font-size: 16px;
   font-weight: 400;
   line-height: 35px;
@@ -979,30 +1051,34 @@ body {
   border: none;
   color: #333333;
   font-size: 16px;
+  font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
   line-height: 18px;
 }
 
 .computation-requeset-text {
   color: #333333;
-  font-size: 16px;
+  font-family: 'Museo Sans Light', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
   font-weight: 400;
-  line-height: 18px;
+  line-height: 24px;
+  text-align: center;
   margin: 0;
   margin-top: 33px;
 }
 
 @media (max-width: 1200px) {
-  .computation-cost-block {
+  .computation-cost__block {
     margin-right: 50px;
   }
-  .computation-requeset-block {
+  .computation-requeset__block {
     margin-left: 100px;
   }
 }
 
 @media (max-width: 990px) {
-  .computation-requeset-block {
+  .computation-requeset__block {
     margin-left: 50px;
   }
 }
@@ -1011,21 +1087,21 @@ body {
   .computation-cost {
     width: 100%;
   }
-  .computation-cost-block {
+  .computation-cost__block {
     margin: auto;
     margin-top: 46px;
     margin-bottom: 70px;
   }
-  .computation-cost-description {
+  .computation-cost__description {
     margin-top: 16px;
   }
-  .computation-cost-questions {
+  .computation-cost__questions {
     margin-top: 14px;
   }
   .computation-requeset {
     width: 100%;
   }
-  .computation-requeset-block {
+  .computation-requeset__block {
     margin: auto;
     margin-top: 60px;
     margin-bottom: 35px;
@@ -1033,33 +1109,33 @@ body {
 }
 
 @media (max-width: 768px) {
-  .computation-cost-block {
+  .computation-cost__block {
     max-width: 275px;
   }
-  .computation-cost-title {
+  .computation-cost__title {
     max-width: 230px;
     font-size: 18px;
     line-height: 27px;
   }
-  .computation-cost-description {
+  .computation-cost__description {
     max-width: 180px;
     font-size: 14px;
     line-height: 21px;
   }
-  .computation-cost-questions-text {
+  .computation-cost__questions-text {
     font-size: 14px;
     margin-left: 8px;
   }
-  .computation-requeset-block {
+  .computation-requeset__block {
     max-width: 275px;
   }
-  .computation-requeset-title {
+  .computation-requeset__title {
     max-width: 275px;
     text-align: center;
     font-size: 18px;
     line-height: 25.35px;
   }
-  .computation-requeset-description {
+  .computation-requeset__description {
     margin-top: 30px;
     font-size: 14px;
     line-height: 26.88px;
@@ -1139,6 +1215,7 @@ body {
 .location-text-p {
   margin-left: 25px;
   max-width: 145px;
+  font-family: "Museo Sans Light";
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
@@ -1148,7 +1225,9 @@ body {
 .location-title {
   color: #000000;
   font-size: 22px;
+  font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
+  font-weight: 400;
   font-size: 24px;
   line-height: 36px;
 }

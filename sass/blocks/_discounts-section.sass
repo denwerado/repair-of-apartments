@@ -2,20 +2,22 @@
     &-section
         padding-top: 100px
         padding-bottom: 60px
-    &-title
+    &__title
         max-width: 515px
         margin: auto
         text-align: center
         color: $discounts-text
         font-size: 30px
-        font-weight: 700
+        +bold
+        font-weight: 400
         line-height: 45px
-    &-description
+    &__description
         max-width: 210px
         margin: auto
         text-align: center
         margin-top: 58px
         color: $discounts-text
+        +light
         font-size: 20px
         font-weight: 400
         line-height: 45px
@@ -25,10 +27,11 @@
         display: flex
         flex-wrap: wrap
         justify-content: space-between
-        &-title
+        &__title
             margin: 0
             margin-top: 40px
             color: $discounts-text
+            +light
             font-size: 18px
             font-weight: 400
             line-height: 45px
@@ -70,16 +73,16 @@
     .discounts
         &-section
             padding-top: 50px
-        &-title
+        &__title
             max-width: 250px
             color: $discounts-text
             font-size: 18px
             font-weight: 700
             line-height: 27px
-        &-description
+        &__description
             margin-top: 30px
             font-size: 14px
-        &-block-title
+        &-block__title
             color: $discounts-text
             font-size: 14px
             font-weight: 400

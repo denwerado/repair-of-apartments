@@ -8,26 +8,28 @@
         display: flex
         justify-content: flex-end
         background-color: #ffc000
-        &-block
+        &__block
             margin-top: 100px
             margin-bottom: 100px
             margin-right: 70px
             margin-left: 6.5%
             max-width: 515px
-        &-title
+        &__title
             margin: 0
             color: $discounts-text
             font-size: 22px
-            font-weight: 700
+            +bold
+            font-weight: 400
             line-height: 33px
-        &-description
+        &__description
             margin: 0
             margin-top: 50px
             color: #000000
+            font-family: +light
             font-size: 16px
             font-weight: 400
             line-height: 45px
-        &-questions
+        &__questions
             margin-top: 64px
             max-width: 450px
             &-option
@@ -44,36 +46,40 @@
                 border-radius: 50%
                 color: $discounts-text
                 font-size: 14px
-                font-weight: 700
+                font-weight: 400
+                +bold
             &-text
                 margin-left: 32px
                 font-size: 18px
-                font-weight: 700
+                +bold
+                font-weight: 400
     &-requeset
         width: 50%
         background: url('../img/computation-section/background.png') no-repeat
         background-size: cover
         background-position: top center
-        &-block
+        &__block
             max-width: 370px
             margin-left: 200px
             margin-right: 6.5%
             margin-top: 100px
             margin-bottom: 100px
-        &-title
+        &__title
             max-width: 360px
             margin: 0
             margin: auto
             text-align: center
             color: $text-color
             font-size: 22px
-            font-weight: 700
+            font-weight: 400
+            +bold
             line-height: 33px
-        &-description
+        &__description
             margin: 0
             margin-top: 50px
             text-align: center
             color: $text-color
+            +light
             font-size: 16px
             font-weight: 400
             line-height: 35px
@@ -103,46 +109,48 @@
             border: none
             color: $text-color
             font-size: 16px
-            font-weight: 700
+            +bold
             line-height: 18px
         &-text 
             color: $text-color
-            font-size: 16px
+            +light
+            font-size: 15px
             font-weight: 400
-            line-height: 18px
+            line-height: 24px
+            text-align: center
             margin: 0
             margin-top: 33px
 
 @media (max-width: 1200px)
     .computation
         &-cost
-            &-block
+            &__block
                 margin-right: 50px
         &-requeset
-            &-block
+            &__block
                 margin-left: 100px
 
 @media (max-width: 990px)
     .computation
         &-requeset
-            &-block
+            &__block
                 margin-left: 50px
 
 @media (max-width: 880px)
     .computation
         &-cost
             width: 100%
-            &-block
+            &__block
                 margin: auto
                 margin-top: 46px
                 margin-bottom: 70px
-            &-description
+            &__description
                 margin-top: 16px
-            &-questions
+            &__questions
                 margin-top: 14px
         &-requeset
             width: 100%
-            &-block
+            &__block
                 margin: auto
                 margin-top: 60px
                 margin-bottom: 35px
@@ -150,29 +158,29 @@
 @media (max-width: 768px)
     .computation
         &-cost
-            &-block
+            &__block
                 max-width: 275px
-            &-title
+            &__title
                 max-width: 230px
                 font-size: 18px
                 line-height: 27px
-            &-description
+            &__description
                 max-width: 180px
                 font-size: 14px
                 line-height: 21px
-            &-questions
+            &__questions
                 &-text 
                     font-size: 14px
                     margin-left: 8px
         &-requeset
-            &-block
+            &__block
                 max-width: 275px
-            &-title
+            &__title
                 max-width: 275px
                 text-align: center
                 font-size: 18px
                 line-height: 25.35px
-            &-description
+            &__description
                 margin-top: 30px
                 font-size: 14px
                 line-height: 26.88px
