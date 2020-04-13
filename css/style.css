@@ -41,6 +41,13 @@ body {
   cursor: pointer;
 }
 
+.input:focus {
+  outline-style: none;
+  outline-width: 0px !important;
+  outline-color: none !important;
+  border-color: orange;
+}
+
 .navbar {
   padding: 8px 0;
 }
