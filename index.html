@@ -24,9 +24,7 @@
                             <a href="tel:+7(495)42-251-31" class="navbar__phone">+7 (495) 42-251-31</a>
                         </div>
                         <!-- /.navbar__contacrs -->
-                        <button class="button navbar__button">
-                            Перезвоните мне
-                        </button>
+                        <button class="button navbar__button" id="modalbtn">Перезвоните мне</button>
                     </div>
                     <!-- /.navbar__info -->
                 </div>
@@ -313,9 +311,19 @@
                 <!-- /.location-text -->
             </section>
             <!-- /.location-section -->
-        </footer>
-        
+        </footer>    
     </main>
+
+    <div class="modal" id="modal">
+        <div class="modal-dialog">
+            <button class="modal-dialog_close" id='close'>&times;</button>
+            <h4 class="modal-dialog__title">Извините, информация загрузится позже...</h4>
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
     
+    <script src="js/main.js"></script>
+
 </body>
 </html>
