@@ -1,0 +1,34 @@
+#upbutton 
+    display: flex
+    background-color: #FF9800
+    width: 50px
+    height: 50px
+    justify-content: center
+    align-items: center
+    border-radius: 5px
+    margin: 10px
+    position: fixed
+    bottom: 30px
+    right: 30px
+    transition: background-color .3s
+    z-index: 1000
+    &:hover 
+        cursor: pointer
+        background-color: #333
+
+    &:active 
+        background-color: #555
+    &::after 
+        content: "\2191"
+        font-size: 1.8em
+        color: #fff
+.up-btn-active
+    display: none
+@media (max-width: 768px)
+    #upbutton 
+        bottom: 15px
+        right: 15px
+        width: 40px
+        height: 40px
+        &::after 
+            font-size: 1.6em

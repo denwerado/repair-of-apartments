@@ -1350,4 +1350,58 @@ body {
   outline-width: 0px !important;
   outline-color: none !important;
 }
+
+#upbutton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #FF9800;
+  width: 50px;
+  height: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+  margin: 10px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s;
+  z-index: 1000;
+}
+
+#upbutton:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+
+#upbutton:active {
+  background-color: #555;
+}
+
+#upbutton::after {
+  content: "\2191";
+  font-size: 1.8em;
+  color: #fff;
+}
+
+.up-btn-active {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  #upbutton {
+    bottom: 15px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+  }
+  #upbutton::after {
+    font-size: 1.6em;
+  }
+}
 /*# sourceMappingURL=style.css.map */
