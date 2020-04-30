@@ -6,6 +6,7 @@
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <link rel="stylesheet" href="css/normalize.css">
    <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/slick.css">
    <title>Ремонт квартир</title>
 </head>
 <body>
@@ -89,20 +90,38 @@
         </section>
         <!-- /.fotm-section -->
 
-        <section class="activity-section">
+        <section class="portfolio-section portfolio">
             <div class="container">
-                <h2 class="activity-title">Работая с 2007 года,<br> мы сделали более 500 ремонтов в квартирах и домах</h2>
-                <div class="activity-repairs">
-                    <div class="activity-img">
-                        <img src="img/activity-section/repairs1.jpg" alt="Ремонт">
+                <h2 class="section-title portfolio__title">Работая с 2007 года,<br> мы сделали более 500 ремонтов в квартирах и домах</h2>
+                <div class="slider">
+                    <div class="slider__item">
+                        <img class="slider__img" src="img/portfolio-section/slider_1.jpg" alt="Ремонт">
                     </div>
-                    <div class="activity-img">
-                        <img src="img/activity-section/repairs2.jpg" alt="Ремонт">
+                    <div class="slider__item">
+                        <img class="slider__img" src="img/portfolio-section/slider_2.jpg" alt="Ремонт">
                     </div>
-                    <div class="activity-img">
-                        <img src="img/activity-section/repairs3.jpg" alt="Ремонт">
+                    <div class="slider__item">
+                        <img class="slider__img" src="img/portfolio-section/slider_3.jpg" alt="Ремонт">
+                    </div>
+                    <div class="slider__item">
+                        <img class="slider__img" src="img/portfolio-section/slider_1.jpg" alt="Ремонт">
+                    </div>
+                    <div class="slider__item">
+                        <img class="slider__img" src="img/portfolio-section/slider_2.jpg" alt="Ремонт">
+                    </div>
+                    <div class="slider__item">
+                        <img class="slider__img" src="img/portfolio-section/slider_3.jpg" alt="Ремонт">
                     </div>
                 </div>
+                <div class="arrows portfolio__arrows">
+                    <div class="arrows__left">
+                        <img src="img/portfolio-section/left-arrow.png" alt="Стрелка влево">
+                    </div>
+                    <div class="arrows__right">
+                        <img src="img/portfolio-section/right-arrow.png" alt="Стрелка вправо">
+                    </div>
+                </div>
+                <!-- /.arrows -->
             </div>
             <!-- /.container -->
         </section>
@@ -332,6 +351,43 @@
     crossorigin="anonymous"></script>
     <script src="js/modal.js"></script>
     <script src="js/up.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.slider').slick({
+                slidesToShow: 3,
+                slidesToScroll: 2,
+                prevArrow: $('.arrows__left'),
+                nextArrow: $('.arrows__right'),
+                responsive: [
+                {
+                    breakpoint: 1300,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                    }
+                },
+                {
+                    breakpoint: 860,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+                    // You can unslick at a given breakpoint now by adding:
+                    // settings: "unslick"
+                    // instead of a settings object
+                ]
+            });
+        });
+    </script>
 
 </body>
 </html>
