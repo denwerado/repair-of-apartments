@@ -6,6 +6,7 @@
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <link rel="stylesheet" href="css/normalize.css">
    <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/animate.css">
    <link rel="stylesheet" href="css/slick.css">
    <title>Ремонт квартир</title>
 </head>
@@ -44,15 +45,15 @@
                         <p class="top-text__subtitle">с гарантией качества, прописанной в договоре</p>
         
                         <ul class="top-list">
-                            <li class="top-list__item">
+                            <li class="top-list__item wow bounceInLeft" data-wow-delay="0.1s">
                                 <img src="img/top-section/virtues/time.png" alt="Время" class="top-list__image">
                                 <p class="top-list__text">Точно соблюдаем сроки</p>
                             </li>
-                            <li class="top-list__item">
+                            <li class="top-list__item wow bounceInLeft" data-wow-delay="0.2s">
                                 <img src="img/top-section/virtues/cost.png" alt="Цена" class="top-list__image">
                                 <p class="top-list__text">Рассчитаем смету на работы и материалы в день обращения</p>
                             </li>
-                            <li class="top-list__item">
+                            <li class="top-list__item wow bounceInLeft" data-wow-delay="0.3s">
                                 <img src="img/top-section/virtues/design.png" alt="Варианты" class="top-list__image">
                                 <p class="top-list__text">Предложим более 100 вариантов исполнения дизайна Вашего жилья</p>
                             </li>
@@ -60,7 +61,7 @@
                         <!-- /.top-list -->
                     </div>
                     <!-- /.top__text-->
-                    <div class="top-img">
+                    <div class="top-img wow fadeInRight" data-wow-delay="0.1s">
                         <img src="img/top-section/section-1.png" alt="Пример отделки">
                     </div>
                 </div>
@@ -75,13 +76,13 @@
                     <h2 class="form-design__title">Мы бесплатно разработаем дизайн-проект Вашего жилья и реализуем его!</h2>
                     <p class="form-design__message">Оставьте заявку на разработку бесплатного дизайн-проекта!</p>
                     <form action="#" class="form form-design" method="ged" enctype="multipart/form-data">
-                        <input class="form-design__name input" id="name" name="user-name" type="text" placeholder="Ваше имя" required maxlength="15" minlength="2">
-                        <input type="tel" class="form-design__phone input" id="phone" name="user-phone" placeholder="Ваш телефон" required >
-                        <button class="form-design__btn button" type="submit">Получить бесплатный дизайн-проект</button>
+                        <input class="form-design__name input wow fadeInDown" data-wow-delay="0.1s" id="name" name="user-name" type="text" placeholder="Ваше имя" required maxlength="15" minlength="2">
+                        <input type="tel" class="form-design__phone input wow fadeInDown" data-wow-delay="0.1s" id="phone" name="user-phone" placeholder="Ваш телефон" required >
+                        <button class="form-design__btn button wow bounceInUp" data-wow-delay="0.2s" type="submit">Получить бесплатный дизайн-проект</button>
                     </form>
                     <div class="form-design__desc">
-                        <p class="form-design__manadger">Наш менеджер перезвонит Вам в течение 60 секунд</p>
-                        <p class="form-design__dialing">или перезвоните нам сами <span class="form-design__dialing-phon">+7 (495) 42-251-31</span></p>
+                        <p class="form-design__manadger wow bounceInLeft" data-wow-delay="0.3s">Наш менеджер перезвонит Вам в течение 60 секунд</p>
+                        <p class="form-design__dialing wow bounceInRight" data-wow-delay="0.3s">или перезвоните нам сами <span class="form-design__dialing-phon">+7 (495) 42-251-31</span></p>
                     </div>
                 </div>
                 <!-- /.form-block -->
@@ -127,52 +128,91 @@
         </section>
         <!-- /.activity-section -->
 
-        <section class="discounts-section">
+        <section class="section price">
             <div class="container">
-                <h2 class="discounts__title">У нас очень гибкая система скидок на комплексные работы!</h2>
-                <p class="discounts__description">Прайс на наши услуги</p>
-                <div class="discounts-block">
-                    <div class="discounts-repair">
-                        <img src="img/discounts-section/bathroom-repair.jpg" alt="Ремонт ванных комнат и с/у">
-                        <p class="discounts-block__title">Ремонт ванных комнат и с/у</p>
-                        <!-- /.discounts-block-title -->
-                        <a href="#" class="discounts-price">Узнать цены</a>
+                <h2 class="section-title price__title">У нас очень гибкая система скидок на комплексные работы!</h2>
+                <!-- /.section-title price__title -->
+                <p class="section-subtitle price__subtitle">Прайс на наши услуги</p>
+                <!-- /.section-subtitle price__subtitle -->
+                <div class="cards">
+                    <div class="card price__card wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="card__image"><img alt="Ремонт ванных комнат и с/у" src="img/price/bathroom-repair.jpg"></div>
+                        <!-- /.card__image -->
+                        <div class="card__text">
+                            <h4 class="card__title">Ремонт ванных комнат и с/у</h4>
+                            <!-- /.card__title -->
+                            <a href="#" class="card__link">Узнать цены</a>
+                            <!-- /.card__link -->
+                        </div>
+                        <!-- /.card__text -->
                     </div>
-                    <div class="discounts-repair">
-                        <img src="img/discounts-section/room-repair.jpg" alt="Ремонт комнат и квартир">
-                        <p class="discounts-block__title">Ремонт комнат и квартир</p>
-                        <!-- /.discounts-block-title -->
-                        <a href="#" class="discounts-price">Узнать цены</a>
+                    <!-- /.card -->
+                    <div class="card price__card wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="card__image"><img src="img/price/room-repair.jpg" alt="Ремонт комнат и квартир" ></div>
+                        <!-- /.card__image -->
+                        <div class="card__text">
+                            <h4 class="card__title">Ремонт комнат и квартир</h4>
+                            <!-- /.card__title -->
+                            <a href="#" class="card__link">Узнать цены</a>
+                            <!-- /.card__link -->
+                        </div>
+                        <!-- /.card__text -->
                     </div>
-                    <div class="discounts-repair">
-                        <img src="img/discounts-section/repair-office.jpg" alt="Отделка офисных помещений">
-                        <p class="discounts-block__title">Отделка офисных помещений</p>
-                        <!-- /.discounts-block-title -->
-                        <a href="#" class="discounts-price">Узнать цены</a>
+                    <!-- /.card -->
+                    <div class="card price__card wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="card__image"><img src="img/price/repair-office.jpg" alt="Отделка офисных помещений"></div>
+                        <!-- /.card__image -->
+                        <div class="card__text">
+                            <h4 class="card__title">Отделка офисных помещений</h4>
+                            <!-- /.card__title -->
+                            <a href="#" class="card__link">Узнать цены</a>
+                            <!-- /.card__link -->
+                        </div>
+                        <!-- /.card__text -->
                     </div>
-                    <div class="discounts-repair">
-                        <img src="img/discounts-section/repair-new-buildings.jpg" alt="Ремонт в новостройках">
-                        <p class="discounts-block-title">Ремонт в новостройках</p>
-                        <!-- /.discounts-block-title -->
-                        <a href="#" class="discounts-price">Узнать цены</a>
+                    <!-- /.card -->
+                    <div class="card price__card wow fadeInUp" data-wow-delay="0.8s">
+                        <div class="card__image"><img src="img/price/repair-new-buildings.jpg" alt="Ремонт в новостройках"></div>
+                        <!-- /.card__image -->
+                        <div class="card__text">
+                            <h4 class="card__title">Ремонт в новостройках</h4>
+                            <!-- /.card__title -->
+                            <a href="#" class="card__link">Узнать цены</a>
+                            <!-- /.card__link -->
+                        </div>
+                        <!-- /.card__text -->
                     </div>
-                    <div class="discounts-repair">
-                        <img src="img/discounts-section/kitchen-repair.jpg" alt="Ремонт кухонь">
-                        <p class="discounts-block-title">Ремонт кухонь</p>
-                        <!-- /.discounts-block-title -->
-                        <a href="#" class="discounts-price">Узнать цены</a>
+                    <!-- /.card -->
+                    <div class="card price__card wow fadeInUp" data-wow-delay="1s">
+                        <div class="card__image"><img src="img/price/kitchen-repair.jpg" alt="Ремонт кухонь"></div>
+                        <!-- /.card__image -->
+                        <div class="card__text">
+                            <h4 class="card__title">Ремонт кухонь</h4>
+                            <!-- /.card__title -->
+                            <a href="#" class="card__link">Узнать цены</a>
+                            <!-- /.card__link -->
+                        </div>
+                        <!-- /.card__text -->
                     </div>
-                    <div class="discounts-repair">
-                        <img src="img/discounts-section/repair-cottages.jpg" alt="Ремонт дач и коттеджей">
-                        <p class="discounts-block-title">Ремонт дач и коттеджей</p>
-                        <!-- /.discounts-block-title -->
-                        <a href="#" class="discounts-price">Узнать цены</a>
+                    <!-- /.card -->
+                    <div class="card price__card wow fadeInUp" data-wow-delay="1.2s">
+                        <div class="card__image"><img src="img/price/repair-cottages.jpg" alt="Ремонт дач и коттеджей"></div>
+                        <!-- /.card__image -->
+                        <div class="card__text">
+                            <h4 class="card__title">Ремонт дач и коттеджей</h4>
+                            <!-- /.card__title -->
+                            <a href="#" class="card__link">Узнать цены</a>
+                            <!-- /.card__link -->
+                        </div>
+                        <!-- /.card__text -->
                     </div>
+                    <!-- /.card -->
                 </div>
-                <!-- /.discounts-block -->
+                <!-- /.cards -->
             </div>
+            <!-- /.container -->
         </section>
-        <!-- /.discounts-section -->
+        <!-- /.section price -->
 
         <div class="froze-section">
             <div class="container">
@@ -267,19 +307,19 @@
                     <h2 class="computation-cost__title">Мы можем озвучить Вам примерную стоимость работы и материалов по телефону</h2>
                     <p class="computation-cost__description">Для этого нужно ответить на 4 вопроса</p>
                     <div class="computation-cost__questions">
-                        <div class="computation-cost__questions-option">
+                        <div class="computation-cost__questions-option wow fadeInLeft" data-wow-delay="0.1s">
                             <div class="computation-cost__questions-number">1.</div>
                             <p class="computation-cost__questions-text">Какова площадь помещения?</p>
                         </div>
-                        <div class="computation-cost__questions-option">
+                        <div class="computation-cost__questions-option wow fadeInLeft" data-wow-delay="0.2s">
                             <div class="computation-cost__questions-number">2.</div>
                             <p class="computation-cost__questions-text">У Вас новостройка или вторичное жилье?</p>
                         </div>
-                        <div class="computation-cost__questions-option">
+                        <div class="computation-cost__questions-option wow fadeInLeft" data-wow-delay="0.3s">
                             <div class="computation-cost__questions-number">3.</div>
                             <p class="computation-cost__questions-text">Где находится помещение в котором будет проводиться ремонт?</p>
                         </div>
-                        <div class="computation-cost__questions-option">
+                        <div class="computation-cost__questions-option wow fadeInLeft" data-wow-delay="0.4s">
                             <div class="computation-cost__questions-number">4.</div>
                             <p class="computation-cost__questions-text">Назначение помещения</p>
                         </div>
@@ -293,9 +333,9 @@
                     <h2 class="computation-requeset__title">Оставьте заявку на бесплатный расчет ремонта по телефону</h2> 
                     <p class="computation-requeset__description">Для этого заполните форму ниже</p>
                     <form action="#" class="form computation-requeset-form" method="ged" enctype="multipart/form-data">
-                        <input type="text" class="computation-requeset-name input" id="name" name="user-name" type="text" placeholder="Ваше имя" required maxlength="15" minlength="2">
-                        <input type="text" class="computation-requeset-phone input" id="phone" name="user-phone" placeholder="Ваш телефон" required>
-                        <button class="computation-requeset-button button">Рассчитать стоимость</button>
+                        <input type="text" class="computation-requeset-name input wow fadeInLeft" data-wow-delay="0.2s" id="name" name="user-name" type="text" placeholder="Ваше имя" required maxlength="15" minlength="2">
+                        <input type="text" class="computation-requeset-phone input wow fadeInRight" data-wow-delay="0.4s" id="phone" name="user-phone" placeholder="Ваш телефон" required>
+                        <button class="computation-requeset-button button wow fadeInUp" data-wow-delay="0.6s">Рассчитать стоимость</button>
                         <p class="computation-requeset-text">Мы перезвоним Вам в течение 60 секунд</p>
                     </form>
                 </div>
@@ -351,8 +391,15 @@
     crossorigin="anonymous"></script>
     <script src="js/modal.js"></script>
     <script src="js/up.js"></script>
+    <!--Подключение слайдера-->
     <script src="js/slick.min.js"></script>
+    <!--Подключение анимации-->
+    <script src="js/wow.min.js"></script>
+
     <script>
+        //Подключение wow.min.js
+        new WOW().init();
+        //Настройка слайдера
         $(document).ready(function(){
             $('.slider').slick({
                 slidesToShow: 3,
@@ -381,13 +428,12 @@
                         slidesToScroll: 1
                     }
                 }
-                    // You can unslick at a given breakpoint now by adding:
-                    // settings: "unslick"
-                    // instead of a settings object
                 ]
             });
         });
     </script>
+
+    
 
 </body>
 </html>
