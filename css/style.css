@@ -20,7 +20,8 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: 'Museo Sans Light', sans-serif;
+  font-weight: 300;
 }
 
 .button {
@@ -45,6 +46,14 @@ body {
   outline-style: none;
   outline-width: 0px !important;
   outline-color: none !important;
+}
+
+.input {
+  width: 240px;
+  height: 65px;
+  border-radius: 10px;
+  border: 1px solid #dddddd;
+  padding: 26px;
 }
 
 .input:focus {
@@ -307,20 +316,7 @@ body {
   font-weight: 300;
 }
 
-.form-design__name {
-  width: 240px;
-  height: 65px;
-  border-radius: 10px;
-  border: 1px solid #dddddd;
-  padding: 26px;
-}
-
 .form-design__phone {
-  width: 240px;
-  height: 65px;
-  border-radius: 10px;
-  border: 1px solid #dddddd;
-  padding: 26px;
   margin-left: 14px;
 }
 
@@ -924,287 +920,172 @@ body {
   }
 }
 
-.computation-section {
+.brif {
+  background-image: url("../img/brif/background-color.jpg"), url("../img/brif/background-img.png");
+  background-position: left center, right center;
+  background-size: 50%, contain;
+  background-repeat: repeat-y, no-repeat;
+}
+
+.brif-block {
+  padding-top: 100px;
+  padding-bottom: 95px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
-.computation-cost {
-  width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  background-color: #ffc000;
+.brif__interview {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
 }
 
-.computation-cost__block {
-  margin-top: 100px;
-  margin-bottom: 100px;
-  margin-right: 70px;
-  margin-left: 6.5%;
-  max-width: 515px;
+.brif__form {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-left: 200px;
+  text-align: center;
 }
 
-.computation-cost__title {
-  margin: 0;
-  color: #000000;
-  font-size: 22px;
-  font-family: 'Museo Sans Bold', sans-serif;
-  font-weight: 700;
-  font-weight: 400;
-  line-height: 33px;
-}
-
-.computation-cost__description {
-  margin: 0;
-  margin-top: 50px;
-  color: #000000;
-  font-family: +light;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 45px;
-}
-
-.computation-cost__questions {
-  margin-top: 64px;
-  max-width: 450px;
-}
-
-.computation-cost__questions-option {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 26px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.computation-cost__questions-number {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  min-width: 35px;
-  min-height: 35px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border: 2px solid #000000;
-  border-radius: 50%;
-  color: #000000;
-  font-size: 14px;
-  font-weight: 400;
-  font-family: 'Museo Sans Bold', sans-serif;
-  font-weight: 700;
-}
-
-.computation-cost__questions-text {
-  margin-left: 32px;
-  font-size: 18px;
-  font-family: 'Museo Sans Bold', sans-serif;
-  font-weight: 700;
-  font-weight: 400;
-}
-
-.computation-requeset {
-  width: 50%;
-  background: url("../img/computation-section/background.png") no-repeat;
-  background-size: cover;
-  background-position: top center;
-}
-
-.computation-requeset__block {
+.brif__input {
+  width: 100%;
   max-width: 370px;
-  margin-left: 200px;
-  margin-right: 6.5%;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-bottom: 15px;
 }
 
-.computation-requeset__title {
-  max-width: 360px;
-  margin: 0;
+.brif__button {
+  display: block;
   margin: auto;
-  text-align: center;
-  color: #333333;
-  font-size: 22px;
-  font-weight: 400;
-  font-family: 'Museo Sans Bold', sans-serif;
-  font-weight: 700;
-  line-height: 33px;
-}
-
-.computation-requeset__description {
-  margin: 0;
-  margin-top: 50px;
-  text-align: center;
-  color: #333333;
-  font-family: 'Museo Sans Light', sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 35px;
-}
-
-.computation-requeset-form {
-  margin-top: 50px;
-}
-
-.computation-requeset-name {
-  width: 370px;
-  height: 65px;
-  border-radius: 10px;
-  border: 1px solid #dddddd;
-  background-color: #ffffff;
-  padding: 26px;
-}
-
-.computation-requeset-phone {
-  width: 370px;
-  height: 65px;
-  border-radius: 10px;
-  border: 1px solid #dddddd;
-  background-color: #ffffff;
-  padding: 26px;
   margin-top: 15px;
-}
-
-.computation-requeset-button {
-  width: 368px;
+  margin-bottom: 30px;
   height: 70px;
-  border-radius: 10px;
-  background-color: #ffd200;
-  margin-top: 30px;
-  border: none;
-  color: #333333;
-  font-size: 16px;
+  width: 100%;
+  max-width: 370px;
+  padding: 28px;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
+  font-size: 16px;
+  font-weight: 400;
   line-height: 18px;
 }
 
-.computation-requeset-text {
-  color: #333333;
-  font-family: 'Museo Sans Light', sans-serif;
-  font-weight: 300;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 24px;
+.interview {
+  padding-right: 70px;
+}
+
+.interview__title {
+  margin-bottom: 50px;
+  font-size: 22px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.interview__subtitle {
+  display: block;
+  margin-bottom: 95px;
+  font-size: 16px;
+}
+
+.interview-list {
+  list-style: none;
+  padding: 0;
+}
+
+.interview-list__item {
+  margin-bottom: 25px;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.interview-list__counter {
+  display: inline-block;
   text-align: center;
-  margin: 0;
-  margin-top: 33px;
+  line-height: 35px;
+  font-size: 14px;
+  width: 35px;
+  height: 35px;
+  border: 2px solid #333333;
+  border-radius: 50%;
+}
+
+.interview-list__text {
+  max-width: 400px;
+  margin-left: 32px;
+}
+
+.form__title {
+  margin-bottom: 50px;
+  font-size: 22px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.form__subtitle {
+  display: block;
+  margin-bottom: 95px;
+  font-size: 16px;
 }
 
 @media (max-width: 1200px) {
-  .computation-cost__block {
-    margin-right: 50px;
+  .brif__form {
+    padding-left: 30px;
   }
-  .computation-requeset__block {
-    margin-left: 100px;
+  .interview {
+    padding-right: 30px;
   }
-}
-
-@media (max-width: 990px) {
-  .computation-requeset__block {
-    margin-left: 50px;
+  .interview__title {
+    font-size: 20px;
+    margin-bottom: 15px;
   }
-}
-
-@media (max-width: 880px) {
-  .computation-cost {
-    width: 100%;
+  .interview__subtitle {
+    margin-bottom: 30px;
   }
-  .computation-cost__block {
-    margin: auto;
-    margin-top: 46px;
-    margin-bottom: 70px;
+  .interview-list__text {
+    font-size: 14px;
+    max-width: 300px;
   }
-  .computation-cost__description {
-    margin-top: 16px;
+  .interview-list__counter {
+    margin-right: 20px;
   }
-  .computation-cost__questions {
-    margin-top: 14px;
+  .form__title {
+    font-size: 20px;
+    margin-bottom: 15px;
   }
-  .computation-requeset {
-    width: 100%;
-  }
-  .computation-requeset__block {
-    margin: auto;
-    margin-top: 60px;
-    margin-bottom: 35px;
+  .form__subtitle {
+    margin-bottom: 30px;
   }
 }
 
 @media (max-width: 768px) {
-  .computation-cost__block {
-    max-width: 275px;
+  .brif {
+    background-image: url("../img/brif/background-color.jpg"), url("../img/brif/background-img.png");
+    background-position: top center, right bottom;
+    background-size: 100% 50%, cover;
+    background-repeat: repeat-x, no-repeat;
   }
-  .computation-cost__title {
-    max-width: 230px;
-    font-size: 18px;
-    line-height: 27px;
+  .brif-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 35px;
   }
-  .computation-cost__description {
-    max-width: 180px;
-    font-size: 14px;
-    line-height: 21px;
+  .brif__form {
+    padding-left: 0;
   }
-  .computation-cost__questions-text {
-    font-size: 14px;
-    margin-left: 8px;
+  .interview {
+    padding-right: 0;
   }
-  .computation-requeset__block {
-    max-width: 275px;
-  }
-  .computation-requeset__title {
-    max-width: 275px;
-    text-align: center;
-    font-size: 18px;
-    line-height: 25.35px;
-  }
-  .computation-requeset__description {
-    margin-top: 30px;
-    font-size: 14px;
-    line-height: 26.88px;
-  }
-  .computation-requeset-form {
-    margin-top: 35px;
-    max-width: 275px;
-  }
-  .computation-requeset-name {
-    width: 275px;
-    height: 65px;
-  }
-  .computation-requeset-phone {
-    margin-top: 8px;
-    width: 275px;
-    height: 65px;
-  }
-  .computation-requeset-button {
-    margin-top: 10px;
-    width: 275px;
-    height: 70px;
-    font-size: 14px;
-    line-height: 18px;
-  }
-  .computation-requeset-text {
-    margin: auto;
-    margin-top: 30px;
-    width: 135px;
-    font-size: 14px;
-    line-height: 24px;
+  .form {
+    padding-top: 50px;
   }
 }
 
