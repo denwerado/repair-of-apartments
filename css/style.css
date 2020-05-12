@@ -371,6 +371,15 @@ body {
   font-weight: 700;
 }
 
+.input-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 @media (max-width: 1200px) {
   .form-design-section:before {
     width: 55%;
