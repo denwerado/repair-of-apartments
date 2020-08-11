@@ -4,10 +4,8 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <link rel="stylesheet" href="css/normalize.css">
    <link rel="stylesheet" href="css/style.css">
    <link rel="stylesheet" href="css/animate.css">
-   <link rel="stylesheet" href="css/slick.css">
    <title>Ремонт квартир</title>
 </head>
 <body>
@@ -45,15 +43,15 @@
                         <p class="top-text__subtitle">с гарантией качества, прописанной в договоре</p>
         
                         <ul class="top-list">
-                            <li class="top-list__item wow bounceInLeft" data-wow-delay="0.1s">
+                            <li class="top-list__item wow fadeInLeft" data-wow-delay="0.1s">
                                 <img src="img/top-section/virtues/time.png" alt="Время" class="top-list__image">
                                 <p class="top-list__text">Точно соблюдаем сроки</p>
                             </li>
-                            <li class="top-list__item wow bounceInLeft" data-wow-delay="0.2s">
+                            <li class="top-list__item wow fadeInLeft" data-wow-delay="0.2s">
                                 <img src="img/top-section/virtues/cost.png" alt="Цена" class="top-list__image">
                                 <p class="top-list__text">Рассчитаем смету на работы и материалы в день обращения</p>
                             </li>
-                            <li class="top-list__item wow bounceInLeft" data-wow-delay="0.3s">
+                            <li class="top-list__item wow fadeInLeft" data-wow-delay="0.3s">
                                 <img src="img/top-section/virtues/design.png" alt="Варианты" class="top-list__image">
                                 <p class="top-list__text">Предложим более 100 вариантов исполнения дизайна Вашего жилья</p>
                             </li>
@@ -78,11 +76,11 @@
                     <form action="#" class="form form-design" method="ged" enctype="multipart/form-data">
                             <input  class="form-design__name input wow fadeInDown" data-wow-delay="0.1s" id="name" name="username" type="text" placeholder="Ваше имя" required>
                             <input type="tel" class="form-design__phone input wow fadeInDown phone" data-wow-delay="0.1s" id="phone" name="phone" placeholder="Ваш телефон" required>
-                            <button class="form-design__btn button wow bounceInUp" data-wow-delay="0.2s" type="submit">Получить бесплатный дизайн-проект</button>
+                            <button class="form-design__btn button wow fadeInUp" data-wow-delay="0.2s" type="submit">Получить бесплатный дизайн-проект</button>
                     </form>
                     <div class="form-design__desc">
-                        <p class="form-design__manadger wow bounceInLeft" data-wow-delay="0.3s">Наш менеджер перезвонит Вам в течение 60 секунд</p>
-                        <p class="form-design__dialing wow bounceInRight" data-wow-delay="0.3s">или перезвоните нам сами <span class="form-design__dialing-phon">+7 (495) 42-251-31</span></p>
+                        <p class="form-design__manadger wow fadeInLeft" data-wow-delay="0.3s">Наш менеджер перезвонит Вам в течение 60 секунд</p>
+                        <p class="form-design__dialing wow fadeInRight" data-wow-delay="0.3s">или перезвоните нам сами <span class="form-design__dialing-phon">+7 (495) 42-251-31</span></p>
                     </div>
                 </div>
                 <!-- /.form-block -->
@@ -345,35 +343,47 @@
         </section>
         <!-- /.section brif -->
 
-        <footer class="footer">
-            <section class="location-section">
-                <div class="location-map">
-                    <div class="location-map-block">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1337.4354826438803!2d37.413227572736055!3d55.683956049986705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54e0aba8dabd3%3A0xc1fc0a10285ac27a!2z0KLQpiAi0K3Qu9C40YLQodGC0YDQvtC50JzQsNGC0LXRgNC40LDQu9GLIg!5e0!3m2!1sru!2sru!4v1584643051023!5m2!1sru!2sru" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="location-google"></iframe>
-                    </div>
-                </div>
-                <div class="location-text">
-                    <h2 class="location-title">Приезжайте к нам в гости! Проконсультируем Вас по всем вопросам ремонта</h2>
-                    <div class="location-text-block">
-                        <div class="location-text-div">
-                            <img src="img/location-section/location.png" alt="Местоположение" class="location-img">
-                            <p class="location-text-p">г. Москва <br><span class="bold">ул. Ленинга, д. 10, корпус 2, оф. 308</span> (Внимание! Адрес, приведенный на карте, не соостветсвет действительности!)</p>
-                        </div>
-                        <div class="location-text-div">
-                            <img src="img/location-section/time.png" alt="Режим" class="location-img">
-                            <p class="location-text-p">Режим работы:<br> <span class="bold">с 9:00 до 18:00</span></p>
-                        </div>
-                        <div class="location-text-div">
-                            <img src="img/location-section/phone.png" alt="Телефон" class="location-img">
-                            <p class="location-text-p">Телефон:<br> <span class="bold">+ 7 (495) 42-251-31</span></p>
-                        </div>
-                    </div>
-                </div>
-                <!-- /.location-text -->
-            </section>
-            <!-- /.location-section -->
-        </footer>    
     </main>
+
+    <footer class="footer section">
+        <div class="map" id="map">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A7a5b0795f886a1916fd3c12d5354e47586e9fd00b0bb25ea20796b2940d54cde&amp;width=100%25&amp;height=640&amp;lang=ru_RU&amp;scroll=false"></script>
+        </div>
+        <div class="container">
+            <div class="contacts-block">
+                <div class="contacts">
+                    <h3 class="contacts__title">Приезжайте к нам в гости! Проконсультируем Вас по всем вопросам ремонта</h3>
+                    <ul class="contacts-list">
+                        <li class="contacts-list__item">
+                            <span class="contacts-list__icon">
+                                <img src="img/footer/location.png" alt="Местоположение">
+                            </span>
+                            <span class="contacts-list__text">г. Москва <br>
+                                <span class="contacts-list__text_bold">ул. Ленина, д. 10, <br>
+                                корпус 2, оф. 308</span></span>
+                        </li>
+                        <li class="contacts-list__item">
+                            <span class="contacts-list__icon">
+                                <img src="img/footer/time.png" alt="Часы">
+                            </span>
+                            <span class="contacts-list__text">Режим работы: <br>
+                                <span class="contacts-list__text_bold">с 9:00 до 18:00</span></span>
+                        </li>
+                        <li class="contacts-list__item">
+                            <span class="contacts-list__icon">
+                                <img src="img/footer/phone.png" alt="Телефон">
+                            </span>
+                            <span class="contacts-list__text">Телефон: <br>
+                                <a href="tel:+7(495)42-251-31" class="contacts-list__text_bold">+7 (495) 42-251-31</a></span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.contacts -->
+            </div>
+            <!-- /.contacts-block -->
+        </div>
+        <!-- /.container -->
+    </footer>
 
     <div class="modal" id="modal">
         <div class="modal-dialog">
@@ -387,6 +397,7 @@
     <a id="upbutton" class=""></a>
 
     <!--<script src="js/main.js"></script>-->
+    <script src="js/jquery-2.2.4.min.js"></script>
     <script
     src="https://code.jquery.com/jquery-3.5.0.min.js"
     integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
