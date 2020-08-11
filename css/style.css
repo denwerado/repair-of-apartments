@@ -621,7 +621,7 @@ body {
 }
 
 .form-design-section {
-  background: url(../img/form-design-section/background-form-design.jpg);
+  background: url(../img/form-design-section/background-form-design.webp);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right;
@@ -1131,17 +1131,17 @@ body {
 }
 
 .availability-bulk-prices {
-  background: url("../img/availability-section/bulk-prices.jpg") no-repeat;
+  background: url("../img/availability-section/bulk-prices.webp") no-repeat;
   block-size: cover;
 }
 
 .availability-maximum-discounts {
-  background: url("../img/availability-section/maximum-discounts.jpg") no-repeat;
+  background: url("../img/availability-section/maximum-discounts.webp") no-repeat;
   block-size: cover;
 }
 
 .availability-trusted-suppliers {
-  background: url("../img/availability-section/trusted-suppliers.jpg") no-repeat;
+  background: url("../img/availability-section/trusted-suppliers.webp") no-repeat;
   block-size: cover;
 }
 
