@@ -354,6 +354,7 @@ template {
   src: url("../fonts/Museo-Sans/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/Museo-Sans/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/Museo-Sans/MuseoSansCyrl-300.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -362,6 +363,7 @@ template {
   src: url("../fonts/Museo-Sans/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/Museo-Sans/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/Museo-Sans/MuseoSansCyrl-700.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 /*Подключаем цвета*/

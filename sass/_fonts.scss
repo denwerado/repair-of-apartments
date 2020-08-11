@@ -6,6 +6,7 @@ url('../fonts/Museo-Sans/MuseoSansCyrl-300.woff') format('woff'),
 url('../fonts/Museo-Sans/MuseoSansCyrl-300.ttf') format('truetype');
 font-weight: normal;
 font-style: normal;
+font-display: swap;
 }
 @mixin light {
     font-family: 'Museo Sans Light', sans-serif;
@@ -20,6 +21,7 @@ font-style: normal;
     url('../fonts/Museo-Sans/MuseoSansCyrl-700.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 @mixin bold {
     font-family: 'Museo Sans Bold', sans-serif;
