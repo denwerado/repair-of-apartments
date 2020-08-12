@@ -1,0 +1,77 @@
+.availability
+    &-section
+        padding-bottom: 140px
+    &-title
+        &__block
+            background-color: #ffc000
+            padding-top: 100px
+            padding-bottom: 100px
+        &__text
+            margin: 0
+            margin: auto
+            max-width: 920px
+            text-align: center
+            color: $discounts-text
+            font-family: "Museo Sans Light"
+            font-size: 32px
+            font-weight: 400
+            line-height: 50px
+    &-help-options
+        margin-top: 70px
+        display: flex 
+        justify-content: space-around
+        flex-wrap: wrap
+    &-block
+        margin-top: 30px
+        padding: 27px
+        max-width: 370px
+        min-height: 410px
+    &-bulk-prices
+        background: url('../img/availability-section/bulk-prices.jpg') no-repeat
+        block-size: cover
+    &-maximum-discounts
+        background: url('../img/availability-section/maximum-discounts.jpg') no-repeat
+        block-size: cover
+    &-trusted-suppliers
+        background: url('../img/availability-section/trusted-suppliers.jpg') no-repeat
+        block-size: cover
+    &__description
+        margin: 0
+        max-width: 288px
+        color: $discounts-text
+        font-family: "Museo Sans Light"
+        font-size: 16px
+        font-weight: 400
+        line-height: 23px
+.bold
+    font-weight: 700
+@media ( max-width: 768px)
+    .availability
+        &-section
+            padding-bottom: 77px
+        &-title
+            &__block
+                padding-top: 72px
+                padding-bottom: 76px
+            &__text
+                max-width: 255px
+                color: $discounts-text
+                font-size: 18px
+                font-weight: 400
+                line-height: 27px
+        &-help-options
+            margin-top: 30px
+        &-block
+            padding: 20
+            max-width: 278px
+            min-height: 300px
+        &__description
+            font-size: 12px
+            font-weight: 400
+            line-height: 17.05px
+        &-bulk-prices
+            background-position: 0 -70px
+        &-maximum-discounts
+            background-position: 0 -70px
+        &-trusted-suppliers
+            background-position: 0 -70px

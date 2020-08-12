@@ -1,0 +1,39 @@
+.navbar
+    padding: 8px 0
+    &-block
+        width: 100%
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__info
+        display: flex
+        align-items: center
+        text-align: right
+    &__contacts
+        display: flex
+        flex-direction: column
+    &__address
+        font-family: "Museo Sans Light"
+        font-size: 13px
+        font-weight: 400
+    &__button
+        margin-left: 30px
+        color: $text-color
+        font-size: 13px
+        font-weight: 400
+    &__phone
+        display: inline-block
+        text-decoration: none
+        color: $text-color
+        font-size: 20px
+        font-weight: 400
+        margin-top: 9px
+@media (max-width: 768px)
+    .navbar
+        &__contacts
+            display: none
+        &__button
+            font-size: 10px
+            padding: 12px 26px
+        &__logo
+            max-width: 91px
