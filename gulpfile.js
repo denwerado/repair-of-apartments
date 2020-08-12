@@ -4,12 +4,6 @@ var htmlmin = require('gulp-htmlmin');
 var tinypngcompress = require('gulp-tinypng-compress');
 var tinypngextended = require('gulp-tinypng-extended');
 
-gulp.task('default', defaultTask);
- 
-function defaultTask(done){
-    done();
-}
-
 gulp.task('minify-css', function(done){
     return gulp.src('./src/css/*.css')
     .pipe(cleanCSS({compatibility: 'ie8'}))
@@ -53,3 +47,7 @@ gulp.task('tinypng-extended', function (done) {
         .pipe(gulp.dest('dist/img/')),
         done();
 });
+
+gulp.task('default', gulp.series('minify-css','move-js','htmlmin','fonts',function(done){
+    done();
+}));
