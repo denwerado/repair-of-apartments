@@ -72,7 +72,7 @@
                 <div class="form-design__block">
                     <h2 class="form-design__title">Мы бесплатно разработаем дизайн-проект Вашего жилья и реализуем его!</h2>
                     <p class="form-design__message">Оставьте заявку на разработку бесплатного дизайн-проекта!</p>
-                    <form action="#" class="form form-design" method="GET" enctype="multipart/form-data">
+                    <form action="mailer/send.php" class="form form-design" method="POST" enctype="multipart/form-data">
                             <input  class="form-design__name input wow fadeInDown" data-wow-delay="0.1s" id="name" name="username" type="text" placeholder="Ваше имя" required>
                             <input type="tel" class="form-design__phone input wow fadeInDown phone" data-wow-delay="0.1s" id="phone" name="phone" placeholder="Ваш телефон" required>
                             <button class="form-design__btn button wow fadeInUp" data-wow-delay="0.2s" type="submit">Получить бесплатный дизайн-проект</button>
@@ -327,7 +327,7 @@
                     <div class="form brif__form">
                         <h3 class="form__title">Оставьте заявку на бесплатный расчет ремонта по телефону</h3>
                         <span class="form__subtitle">Для этого заполните форму ниже</span>
-                        <form action="#" id="brif-form">
+                        <form action="mailer/send.php" method="POST" id="brif-form">
                             <input type="text" name="username" class="input brif__input wow fadeInLeft" data-wow-delay="0.2s" placeholder="Ваше имя">
                             <input type="tel" name="phone" class="input brif__input wow fadeInRight phone" data-wow-delay="0.3s" placeholder="Ваш телефон">
                             <button class="button brif__button wow fadeInUp" data-wow-delay="0.4s">Узнать стоимость</button>
