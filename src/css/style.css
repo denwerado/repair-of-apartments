@@ -1574,6 +1574,43 @@ body {
   outline-color: none !important;
 }
 
+.sucmod {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.sucmod_active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sucmod-dialog {
+  position: relative;
+  margin: auto;
+  max-width: 450px;
+  width: 90%;
+  min-width: 200px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.sucmod-dialog_close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 10px;
+  outline-style: none;
+  outline-width: 0px !important;
+  outline-color: none !important;
+}
+
 #upbutton {
   display: -webkit-box;
   display: -ms-flexbox;

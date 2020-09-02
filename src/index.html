@@ -72,10 +72,10 @@
                 <div class="form-design__block">
                     <h2 class="form-design__title">Мы бесплатно разработаем дизайн-проект Вашего жилья и реализуем его!</h2>
                     <p class="form-design__message">Оставьте заявку на разработку бесплатного дизайн-проекта!</p>
-                    <form action="mail.php" class="form form-design" method="POST" enctype="multipart/form-data">
+                    <form action="mail.php" class="form form-design" method="POST" id='form-design' enctype="multipart/form-data">
                             <input  class="form-design__name input wow fadeInDown" data-wow-delay="0.1s" id="name" name="name" type="text" placeholder="Ваше имя" required>
                             <input type="tel" class="form-design__phone input wow fadeInDown phone" data-wow-delay="0.1s" id="phone" name="phone" placeholder="Ваш телефон" required>
-                            <button class="form-design__btn button wow fadeInUp" data-wow-delay="0.2s" type="submit">Получить бесплатный дизайн-проект</button>
+                            <button class="form-design__btn button  sucmodbtn wow fadeInUp" data-wow-delay="0.2s" type="submit">Получить бесплатный дизайн-проект</button>
                     </form>
                     <div class="form-design__desc">
                         <p class="form-design__manadger wow fadeInLeft" data-wow-delay="0.3s">Наш менеджер перезвонит Вам в течение 60 секунд</p>
@@ -330,7 +330,7 @@
                         <form action="mail.php" method="POST" id="brif-form">
                             <input type="text" name="name" class="input brif__input wow fadeInLeft" data-wow-delay="0.2s" placeholder="Ваше имя">
                             <input type="tel" name="phone" class="input brif__input wow fadeInRight phone" data-wow-delay="0.3s" placeholder="Ваш телефон">
-                            <button class="button brif__button wow fadeInUp" data-wow-delay="0.4s">Узнать стоимость</button>
+                            <button class="button brif__button sucmodbtn wow fadeInUp" data-wow-delay="0.4s">Узнать стоимость</button>
                             <span class="form__description">Мы перезвоним Вам в течение 60 секунд</span>
                         </form>
                     </div>
@@ -392,6 +392,13 @@
         <!-- /.modal-dialog -->
     </div>
     <!-- /.modal -->
+
+    <div class="sucmod" id="sucmod">
+        <div class="sucmod-dialog">
+            <button class="sucmod-dialog_close">&times;</button>
+            <p class="sucmod-dialog__text"></p>
+        </div>
+    </div>
     
     <a id="upbutton" class=""></a>
 
@@ -402,6 +409,7 @@
     integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
     crossorigin="anonymous"></script>
     <script src="js/modal.js"></script>
+    <script src="js/sucmod.js"></script>
     <script src="js/up.js"></script>
     <!--Подключение слайдера-->
     <script src="js/slick.min.js"></script>
@@ -412,57 +420,7 @@
     <!--Подключение маски для формы-->
     <script src="js/jquery.maskedinput.min.js"></script>
 
-    <script>
-        //Подключение wow.min.js
-        new WOW().init();
-        $(document).ready(function(){
-            //Валидация формы
-            $('#brif-form').validate({
-                rules:{
-                    username: "required",
-                    phone:{
-                        required: true
-                    }
-                },
-                messages:{
-                    username: "Укажите имя",
-                    phone: "Укажите телефон"
-                }
-            });
-            //Маска для телефона
-            $('.phone').mask('+7 (999) 999-99-99');
-            //Настройка слайдера
-            $('.slider').slick({
-                slidesToShow: 3,
-                slidesToScroll: 2,
-                prevArrow: $('.arrows__left'),
-                nextArrow: $('.arrows__right'),
-                responsive: [
-                {
-                    breakpoint: 1300,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1,
-                    }
-                },
-                {
-                    breakpoint: 860,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
-                }
-                ]
-            });
-        });
-    </script>
+    <script src="js/scripts.js"></script>
 
 </body>
 </html>
